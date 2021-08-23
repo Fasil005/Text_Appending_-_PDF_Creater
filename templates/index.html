@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Creater</title>
+    <link rel="stylesheet" type="text/css" href="static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+</head>
+<body>
+    
+    <div class="warning">
+        {% for message in get_flashed_messages() %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    </div>
+
+    <div class="container-home">
+        <div class="wrap-forms">
+            <form class="form-form validate-form" action="/pdfcreating" method="post" enctype="multipart/form-data">
+            </form>
+            <div class="form2">
+                <form  action="/pdfcreating" method="post" enctype="multipart/form-data">
+                    <span class="form-form-title">
+                        Append a File to Another
+                    </span>
+                    <!-- <label for="secondarypdf">Appending From</label> -->
+                    <div class="file-upload-wrapper" data-text="Select Your File!">
+                        <input name="secondarypdf" type="file" class="file-upload-field" value="">
+                    </div>
+                    <!-- <label for="mainpdf">Appending To</label> -->
+                    <div class="file-upload-wrapper" data-text="Select Your File!">
+                        <input name="mainpdf" type="file" class="file-upload-field" value="">
+                    </div>
+                    <!-- <label for="secondarypdf">Appending From</label>
+                    <input type="file" id="secondarypdf" name="secondarypdf"> -->
+                    <!-- <label for="mainpdf">Appending To</label>
+                    <input type="file" id="mainpdf" name="mainpdf"> -->
+                    <!-- <input type="submit"> -->
+                    <div class="container-submit-form-btn">
+                        <button class="submit-form-btn">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="dwn-btn">
+                <a href={{filepath}}>Download</a>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+
+
