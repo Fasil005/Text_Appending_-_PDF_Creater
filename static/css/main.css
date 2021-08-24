@@ -134,7 +134,7 @@ a:hover {
 }
 
 .form-form-title {
-  font-family: Poppins-Bold;
+  font-family: 'Poppins', sans-serif;
   font-size: 24px;
   color: #333333;
   line-height: 1.2;
@@ -167,7 +167,7 @@ a:hover {
   } 
 }
 
-.file-upload-wrapper {
+.file-upload-wrapper-first {
   /* $defaultColor: #4daf7c;
   $height: 60px; */
   
@@ -176,7 +176,7 @@ a:hover {
   height: 60px;
   padding: 20px;
 }
-.file-upload-wrapper::after{
+.file-upload-wrapper-first::after{
   content: attr(data-text);
     font-size: 18px;
     position: absolute;
@@ -194,7 +194,7 @@ a:hover {
     border-radius: 5px 10px 10px 5px;
     font-weight: 300;
 }
-.file-upload-wrapper::before{
+.file-upload-wrapper-first::before{
   content: 'Upload';
     position: absolute;
     top: 0;
@@ -211,9 +211,71 @@ a:hover {
     text-transform: uppercase;
     pointer-events: none;
     border-radius: 0 5px 5px 0;
+
+    background: -webkit-linear-gradient(-135deg, #3bffff, #5195fa);
+    background: -o-linear-gradient(-135deg, #3bffff, #5195fa);
+    background: -moz-linear-gradient(-135deg, #3bffff, #5195fa);
+    background: linear-gradient(-135deg, #3bffff, #5195fa);
 }
-.file-upload-wrapper:hover::before {
-  background: darken(#4daf7c, 10%)
+.file-upload-wrapper-first:hover::before {
+  background: #333333
+}
+
+
+
+
+.file-upload-wrapper-second {
+  /* $defaultColor: #4daf7c;
+  $height: 60px; */
+  
+  position: relative;
+  width: 300px;
+  height: 60px;
+  margin-top: 10px;
+}
+.file-upload-wrapper-second::after{
+  content: attr(data-text);
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    padding: 10px 15px;
+    display: block;
+    width: calc(100% - 40px);
+    pointer-events: none;
+    z-index: 20;
+    height: 40px;
+    line-height: 40px;
+    color: #999;
+    border-radius: 5px 10px 10px 5px;
+    font-weight: 300;
+    
+}
+.file-upload-wrapper-second::before{
+  content: 'Upload';
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    height: 60px;
+    background: #4daf7c;
+    color: #fff;
+    font-weight: 700;
+    z-index: 25;
+    font-size: 16px;
+    line-height: 60px;
+    padding: 0 15px;
+    text-transform: uppercase;
+    pointer-events: none;
+    border-radius: 0 5px 5px 0;
+    background: -webkit-linear-gradient(-135deg, #3bffff, #5195fa);
+    background: -o-linear-gradient(-135deg, #3bffff, #5195fa);
+    background: -moz-linear-gradient(-135deg, #3bffff, #5195fa);
+    background: linear-gradient(-135deg, #3bffff, #5195fa);
+}
+.file-upload-wrapper-second:hover::before {
+  background: #333333
 }
 input {
   opacity: 0;
@@ -252,7 +314,7 @@ input {
   line-height: 1.5;
   color: #fff;
   text-transform: uppercase;
-
+  margin-top: -10px;
   width: 100%;
   height: 50px;
   border-radius: 7px;
@@ -265,6 +327,11 @@ input {
   justify-content: center;
   align-items: center;
   padding: 0 25px;
+
+  background: -webkit-linear-gradient(-135deg, #3bffff, #5195fa);
+  background: -o-linear-gradient(-135deg, #3bffff, #5195fa);
+  background: -moz-linear-gradient(-135deg, #3bffff, #5195fa);
+  background: linear-gradient(-135deg, #3bffff, #5195fa);
 
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -300,8 +367,9 @@ input {
   border-radius: 10px; 
   width: 400px;
   height: 300px;
-  background: -webkit-linear-gradient(-135deg, #3382f8, #15d8d8);
-  background: -o-linear-gradient(-135deg, #3382f8, #15d8d8);
-  background: -moz-linear-gradient(-135deg, #3382f8, #15d8d8);
-  background: linear-gradient(-135deg, #3382f8, #15d8d8);
+  background: #49a4bd;
+  /* background: -webkit-linear-gradient(-135deg, #ff3478, #bb97ff);
+  background: -o-linear-gradient(-135deg, #ff3478, #bb97ff);
+  background: -moz-linear-gradient(-135deg,#ff3478, #bb97ff);
+  background: linear-gradient(-135deg, #ff3478, #bb97ff); */
 }
