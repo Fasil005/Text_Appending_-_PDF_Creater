@@ -18,26 +18,16 @@
 
     <div class="container-home">
         <div class="wrap-forms">
-            <form class="form-form validate-form" action="/pdfcreating" method="post" enctype="multipart/form-data">
-            </form>
-            <div class="form2">
-                <form  action="/pdfcreating" method="post" enctype="multipart/form-data">
+            <div class="form1">
+                <form action="/pdfcreating" method="post" enctype="multipart/form-data">
                     <span class="form-form-title">
-                        Append a File to Another
+                        Create PDF
                     </span>
-                    <!-- <label for="secondarypdf">Appending From</label> -->
-                    <div class="file-upload-wrapper-first"  data-text="Select Your File!">
-                        <input name="secondarypdf" type="file" class="file-upload-field" value="">
+
+                    <div class="file-upload-wrapper-second" data-text="Create PDF">
+                        <input name="mainfile" type="file" class="file-upload-field" value="">
                     </div>
-                    <!-- <label for="mainpdf">Appending To</label> -->
-                    <div class="file-upload-wrapper-second" data-text="Select Your File!">
-                        <input name="mainpdf" type="file" class="file-upload-field" value="">
-                    </div>
-                    <!-- <label for="secondarypdf">Appending From</label>
-                    <input type="file" id="secondarypdf" name="secondarypdf"> -->
-                    <!-- <label for="mainpdf">Appending To</label>
-                    <input type="file" id="mainpdf" name="mainpdf"> -->
-                    <!-- <input type="submit"> -->
+
                     <div class="container-submit-form-btn">
                         <button class="submit-form-btn">
                             Submit
@@ -45,9 +35,30 @@
                     </div>
                 </form>
             </div>
-            <div class="dwn-btn">
-                <a href={{filepath}}>Download</a>
+            <div class="form2">
+                <form  action="/appending" method="post" enctype="multipart/form-data">
+                    <span class="form-form-title">
+                        Append a File to Another
+                    </span>
+
+                    <div class="file-upload-wrapper-first"  data-text="Appending From">
+                        <input name="secondaryfile" type="file" class="file-upload-field" value="">
+                    </div>
+
+                    <div class="file-upload-wrapper-second" data-text="Appending To">
+                        <input name="mainfile" type="file" class="file-upload-field" value="">
+                    </div>
+
+                    <div class="container-submit-form-btn">
+                        <button class="submit-form-btn">
+                            Submit
+                        </button>
+                    </div>
+                </form>
             </div>
+            
+                <a style="text-decoration: none;color: #ffffff;" href={{filepath}}  ><div class="dwn-btn" >Download</div></a>
+            
         </div>
         
     </div>

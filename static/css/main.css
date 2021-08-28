@@ -2,28 +2,7 @@
 
 
 
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
 
-@font-face {
-  font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
-}
-
-@font-face {
-  font-family: Poppins-Bold;
-  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
-}
-
-@font-face {
-  font-family: Poppins-Medium;
-  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
-}
-
-@font-face {
-  font-family: Montserrat-Bold;
-  src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
-}
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
@@ -105,24 +84,6 @@ a:hover {
   background: -moz-linear-gradient(-135deg, #5b98f5, #37fcfc);
   background: linear-gradient(-135deg, #5b98f5, #37fcfc);
 }
-/*
-.wrap-form {
-  width: 960px;
-  height: 400px;
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-   padding: 150px 30px 33px 00px; 
-}*/
-
 
 
 /*------------------------------------------------------------------
@@ -142,7 +103,9 @@ a:hover {
 
   width: 100%;
   display: block;
-  padding-bottom: 54px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 
@@ -344,32 +307,61 @@ input {
 }
 
 .dwn-btn{
-  padding-top: 10%;
-  padding-right: 70%;
+  position: relative;
+  padding-top: 17px;
+  padding-left: 430px;
+  background: #333333;
+  width: 100%;
+  height: 60px;
+  margin-top: 50px;
+  border-radius: 10px;
+  cursor: pointer;
 }
-
+.dwn-btn:hover{
+  background: #729b8a;
+}
+a.fill-div{
+  position: absolute;
+  text-decoration: none;
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
+}
 .wrap-forms{
   padding-bottom: 60px;
   width: 960px;
   height: 400px;
   margin-top: -50px;
   border-radius: 10px;
-  background: #ffffff;
+  background: #d9dad9;
 
 }
 
 .form2{
   padding-left: 55px;
+  margin-left: 500px;
+  margin-top: -300px;
+  border-radius: 10px; 
+  width: 400px;
+  height: 300px;
+  background: #49a4bd;
+}
+
+.form1{
+  padding-left: 55px;
   /* padding-top: 10px; */
   padding-bottom: 20px;
-  margin-left: 500px;
+  margin-left: 50px; 
   margin-top: 50px;
   border-radius: 10px; 
   width: 400px;
   height: 300px;
   background: #49a4bd;
-  /* background: -webkit-linear-gradient(-135deg, #ff3478, #bb97ff);
-  background: -o-linear-gradient(-135deg, #ff3478, #bb97ff);
-  background: -moz-linear-gradient(-135deg,#ff3478, #bb97ff);
-  background: linear-gradient(-135deg, #ff3478, #bb97ff); */
+}
+
+
+.warning{
+
+  text-align: center;
+  background: rgb(255, 255, 255);
 }
