@@ -1,2 +1,16 @@
-This is Flask Project To Create PDF and You can append one files texts to another.
+# FlaskApp
+
+Simple Application to Create PDF and You can Append one file texts to another.
+
+## Installation
+
+```bash
+pip install -r requirements.txt
+```
+
+### Running the app
+
+```bash
+python app.py
+```
 
