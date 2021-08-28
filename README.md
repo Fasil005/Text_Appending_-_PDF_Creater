@@ -1,4 +1,4 @@
-# FlaskApp
+# TEXT APPENDING AND PDF CREATING FLASK APP
 
 Simple Application to Create PDF and You can Append one file texts to another.
 
