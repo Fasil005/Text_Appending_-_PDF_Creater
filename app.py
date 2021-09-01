@@ -147,4 +147,10 @@ def creating(file):
 
 
 if __name__ == "__main__":
+
+    #creating the directories if not exists
+    if not os.path.exists('static/main') and not os.path.exists('static/secondary'):
+        os.makedirs('static/main')
+        os.makedirs('static/secondary')
+        
     app.run(debug=True)
